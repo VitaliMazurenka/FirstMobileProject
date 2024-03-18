@@ -11,8 +11,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static jdk.nashorn.internal.objects.NativeDate.getYear;
-
 public class ReminderHelper extends BaseHelper {
     public ReminderHelper(AppiumDriver driver) {
         super(driver);
@@ -31,7 +29,7 @@ public class ReminderHelper extends BaseHelper {
         if (!getSelectedMonth().equals(month)) {
             for (int i = 0; i < number; i++) {
                 if (period.equals("future")) {
-                    swipe(0.8, 0.4)
+                    swipe(0.8, 0.4);
                 } else if (period.equals("past")) {
                     swipe(0.5, 0.8);
                 }
